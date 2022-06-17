@@ -1,11 +1,17 @@
-Hey guys u wanna scrape some videos from dmax?
-I coded this for a friend of mine, and I think it's pretty cool.
+# DMAX-SCRAPER
 
-I wrote this in Typescript and used Deno and youtube-dl to scrape the videos.
-U wanna use it? No problem!
+## Overview | What is this?
 
-Here is how to use it:
-First u need deno and youtube-dl.
+This is a scraper for `dmax.de` that downloads the videos from the site.
+I coded this originally for a friend of mine, and I think it's pretty cool to show of here too.
+
+This is written in TypeScript with Deno and makes use of the youtube-dl cli.
+Wanna see it in action? Then follow a method in the [usage](##Usage) section.
+
+## Prerequisites
+
+- Deno
+- youtube-dl
 
 To install deno:
 go to the deno website and follow the instructions. https://deno.land/
@@ -13,20 +19,31 @@ go to the deno website and follow the instructions. https://deno.land/
 To install youtube-dl:
 go to the youtube-dl website and follow the instructions. https://ytdl-org.github.io/youtube-dl/
 
-So how to use the dmax scraper:
-INFO: Deno need access to your drive, network and running commands. Thats why u have to give him the premissions to do that.
+## Usage
 
-First method:
-1. Open the terminal and type: deno run --allow-net --allow-run --allow-write="." --allow-read="." mod.ts <url>
-2. And u using the scraper :)
+> INFO: Deno need access to your drive, network and running commands. Thats why u have to give him the premissions to do that.
 
-Secound method:
-1. Open the terminal and type: deno compile --allow-net --allow-run --allow-write="." --allow-read="." mod.ts
-2. Now u can use the executable file and but it in every folder where u would like to use it.
-3. Run the executable: ./dmax-scraper <url>
+### First method - Using From File
 
-Third method:
-1. Open the terminal and type: deno install --allow-net --allow-run --allow-write --allow-read -n dmax-scraper https://raw.githubusercontent.com/HaxSam/dmax-scraper/main/mod.ts
+1. Clone the repostirory to your drive. `git clone https://github.com/HaxSam/dmax-scraper.git`
+2. Open the terminal in the folder and type: `deno run --allow-net --allow-run --allow-write="." --allow-read="." mod.ts <url>`
+   Where `<url>` is the url to download.
+3. There you go your using the scraper :)
+
+### Secound method - Self Compiling
+
+1. Clone the repostirory to your drive. `git clone https://github.com/HaxSam/dmax-scraper.git`
+2. Open the terminal in the folder and type: `deno compile --allow-net --allow-run --allow-write="." --allow-read="." mod.ts`
+3. Now you got an executable that you can run. Add it to your path variables on windows, too your bin directories on linux or just in the folder where you want to use it.
+   Run the executable (in Folder): `./dmax-scraper <url>`
+   Run the executable (as Binary): `dmax-scraper <url>`
+   Where `<url>` is the url to download.
+4. There you go your using the scraper :)
+
+### Third method - Install it with deno directly
+
+1. Open the terminal and type: `deno install --allow-net --allow-run --allow-write --allow-read -n dmax-scraper https://raw.githubusercontent.com/HaxSam/dmax-scraper/main/mod.ts`
 2. Now u installed the scraper globaly and u can use the scraper in every folder where u would like to use it.
-3. Go to the folder where u wanna store the series
-4. Run the scraper: dmax-scraper <url>
+3. Go to the folder where u wanna store/download something to.
+4. Run the scraper: `dmax-scraper <url>`
+   Where `<url>` is the url to download.
