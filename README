@@ -1,0 +1,25 @@
+Hey guys u wanna scrape some videos from dmax?
+I coded this for a friend of mine, and I think it's pretty cool.
+
+I wrote this in Typescript and used Deno and youtube-dl to scrape the videos.
+U wanna use it? No problem!
+
+Here is how to use it:
+First u need deno and youtube-dl.
+
+To install deno:
+go to the deno website and follow the instructions. https://deno.land/
+
+To install youtube-dl:
+go to the youtube-dl website and follow the instructions. https://ytdl-org.github.io/youtube-dl/
+
+So how to use the dmax scraper:
+INFO: Deno need access to your drive, network and running commands. Thats why u have to give him the premissions to do that.
+
+First method:
+	Open the terminal and type: deno run --allow-net --allow-run --allow-write="." --allow-read="." mod.ts <url>
+
+Secound method:
+	1. Open the terminal and type: deno compile --allow-net --allow-run --allow-write="." --allow-read="." mod.ts
+	2. Now u can use the executable file and but it in every folder where u would like to use it.
+	3. Run the executable: ./dmax-scraper <url>
