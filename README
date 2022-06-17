@@ -23,3 +23,9 @@ Secound method:
 	1. Open the terminal and type: deno compile --allow-net --allow-run --allow-write="." --allow-read="." mod.ts
 	2. Now u can use the executable file and but it in every folder where u would like to use it.
 	3. Run the executable: ./dmax-scraper <url>
+
+Third method:
+	1. Open the terminal and type: deno install --allow-net --allow-run --allow-write --allow-read -n dmax-scraper https://raw.githubusercontent.com/HaxSam/dmax-scraper/main/mod.ts
+	2. Now u installed the scraper globaly and u can use the scraper in every folder where u would like to use it.
+	3. Go to the folder where u wanna store the series
+	4. Run the scraper: dmax-scraper <url>
